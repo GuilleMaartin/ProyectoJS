@@ -1,8 +1,8 @@
-const numeros =[1, 2, 3, 4]
-
-numeros.forEach((num) => {
-    console.log(num)
-})
+//const numeros =[1, 2, 3, 4]
+//
+//numeros.forEach((num) => {
+//    console.log(num)
+//})
 
 
 
@@ -34,7 +34,7 @@ function buscarProducto(){
 
 
 function listarProductos(){
-    console.table(variedad)
+    console.table(variedad) || console.table(carrito)
 }
 
 function creandoId(){
@@ -47,8 +47,7 @@ function agregarEmpanada(){
     let id = creandoId()
     let nombre = prompt ("¿Que empanada nueva te gustaria que tengamos? : ")
     let precio = prompt("Precio de la empanada: ")
-    let stock = prompt("Cuantas empandas: ")
-    variedad.push(new Empanadas(id,nombre, precio, stock))
+    variedad.push(new Empanadas(id,nombre, precio))
     console.table(variedad)
     listarProductos()
 }
