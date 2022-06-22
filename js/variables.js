@@ -1,0 +1,3 @@
+const variedad = []
+const carrito = []
+
