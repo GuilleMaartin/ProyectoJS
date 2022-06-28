@@ -1,14 +1,12 @@
 class Empanadas {
     constructor(nombre) {
         this.id = creandoId()
-        this.nombre = nombre.toUpperCase()
-        this.precio = 28
-        this.precioConiva = function(){
-        let pf = this.precio * IVA
-        return pf.toFixed(2)
-        }
+        this.nombre = nombre
+        this.precio = valor
+        this.precioFinal = precioconIva(valor, IVA)
     }
 }
+
 
 function chango(){
     carrito.push(new Empanadas("verduras"))
@@ -23,9 +21,9 @@ function stock(){
     variedad.push(new Empanadas("pollo con verdeo y salsa blanca"))
     variedad.push(new Empanadas("bondiola a la cerveza"))
     variedad.push(new Empanadas("pollo con miel y limón"))
-    listarProductos()
+    console.table(variedad)
 }
-// function precioConiva(){
-//     let pf = .precio * IVA
-//     return pf.toFixed(2)
-// }
+
+function precioconIva(valor, IVA){
+    return valor * IVA;
+}

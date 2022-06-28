@@ -7,11 +7,11 @@
 
 
 
-function listarProductos(){
-    for (let i = 0; i < productos.length; i++) {
-        console.log(productos[i])
-    }
-}
+//function listarProductos(){
+//    for (let i = 0; i < productos.length; i++) {
+//        console.log(productos[i])
+//    }
+//}
 function eliminarProducto(){
 
     let palabra = prompt("¿Que desea eliminar del carrito?")
@@ -34,7 +34,7 @@ function buscarProducto(){
 
 
 function listarProductos(){
-    console.table(variedad) || console.table(carrito)
+    console.table(Empanadas)
 }
 
 function creandoId(){
@@ -43,12 +43,9 @@ function creandoId(){
 
 
 function agregarEmpanada(){
-    debugger
-    let id = creandoId()
-    let nombre = prompt ("¿Que empanada nueva te gustaria que tengamos? : ")
-    let precio = prompt("Precio de la empanada: ")
-    variedad.push(new Empanadas(id,nombre, precio))
-    console.table(variedad)
-    listarProductos()
+    
+    let nombre = prompt ("¿Que empanada nueva te gustaria que tengamos? : " ).toUpperCase()
+    variedad.push(new Empanadas(nombre))
+    stock()
 }
 
