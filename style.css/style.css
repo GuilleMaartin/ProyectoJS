@@ -34,9 +34,10 @@ header{
     margin: 1rem;
     justify-content: space-around;
 }
-.menu{
+
+.menu{  
     display: flex;
-    width: 20%;
+    width: 40%;
 }
 .menu2{
     display: flex;
@@ -122,6 +123,30 @@ main{
     cursor: pointer;
     text-transform: uppercase;
 }
+.productos{
+    background-color: rgba(4,9,30,0.7);
+    color: var(--color-primario);
+    border-radius: 1rem;  
+    height: 380px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    gap:3rem;
+}
+.contenedor-carrito{
+    background-color: #97601d;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.img-carrito{
+    width: 50px;
+    height: 50px;
+}
 main div div img{
     width: 200px;
     height: 200px;
@@ -188,4 +213,54 @@ footer{
     flex-direction: column;
     color: var(--color-primario);
     margin: 2rem;
+}
+
+
+
+/*REGISTRARSE.HTML*/
+
+
+
+.contenido{
+    display: flex;
+}
+
+fieldset{
+    width: 30%;
+    margin: 10px auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffe4c4;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid peru;
+}
+.fielTitulo{
+    text-transform:uppercase;
+    padding: 1rem;
+}
+
+article{
+    width: 50%;
+    margin: 10px auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffe4c4;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid peru;
+}
+thead tr{
+    display: flex;
+    gap: 6rem;
+    border-bottom: 1px solid #333;
+}
+.botones{
+    background-color: #fff;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
 }

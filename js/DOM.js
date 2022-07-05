@@ -1,6 +1,10 @@
 
-const compras = document.getElementsByClassName("carrito")
-const contenedorEcommerce = document.getElementsByClassName("contenedor-ecommerce")
+let menu = document.getElementById("menu-ecom")
+let divMenu = document.getElementsByClassName("ecommerce-menu")
 
-console.log (compras)
-console.log (contenedorEcommerce)
+
+let listadoFrutas = document.getElementById("listadoFrutas")
+let listadoCarrito = document.getElementsByClassName("contenedor-carrito")
+
+
+
