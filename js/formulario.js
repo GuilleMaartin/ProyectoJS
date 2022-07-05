@@ -6,13 +6,13 @@ let inputTel = document.getElementById("inputTel")
 let buttom = document.getElementById("buttom")
 let datosDeInput = ""
 
-//let magia = document.getElementById("magia")
-//
-//    magia.addEventListener("click", ()=>{
-//        cargarProductos()
-//        alert("Se tomo el evento")
-//    })
-//
+let magia = document.getElementById("magia")
+
+    magia.addEventListener("click", ()=>{
+        cargarProductos()
+        alert("Se tomo el evento")
+    })
+
 inputNombre.addEventListener("input",()=>{
     console.log(inputNombre.value)
 })
