@@ -33,9 +33,7 @@ function listarProductos(){
     })
 }
 
-function creandoId(){
-        return parseInt(Math.random()*10000) 
-}
+
 
 
 function agregarProducto(){
@@ -65,6 +63,9 @@ function cargarProductos(){
     }
 } 
 
+function creandoId(){
+    return parseInt(Math.random()*10000) 
+}
 
 function agregarAlCarrito(vari){
     //console.log(vari)
