@@ -34,7 +34,7 @@ function listarProductos(){
 }
 
 function creandoId(){
-        return parseInt(Math.randocumentby()*10000) 
+        return parseInt(Math.random()*10000) 
 }
 
 
