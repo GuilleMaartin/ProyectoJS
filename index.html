@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css/style.css">
+    
 </head>
+
 <body>
     <header>
         <div class="contenedor-header">
@@ -21,13 +23,28 @@
             <div class="menu2">
                 <li><a href="#contacto">contact</a></li>
                 <li><a href="#contacto">nosotros</a></li>
-                <li><img src="./imagenes/carrito.svg" style="cursor:pointer" ></li>
+
+
+
+
+
+
+                <li><button class="carritoButton" ><img src="./imagenes/carrito.svg" style="cursor:pointer"></button></li>
+                <div id="contenedorCarrito">
+                </div>
+            </div>
+        </div>
+        <div class="modalPadre" >
+            <div class="modal-carrito">
+                <h3>Carrito</h3>
+                <div id="carrito-contenedor"></div>
+                <button class="carritoCerrar">Cerrar</button>
             </div>
         </div>
     </header>
 
-    <main id="menu">
-        <h1  style="text-align: center;margin: 1rem;color: rgba(4,9,30,0.7);">Menu</h1>
+    <main id="contenedorProducto">
+        <!-- <h1  style="text-align: center;margin: 1rem;color: rgba(4,9,30,0.7);">Menu</h1>
         <div class="contenedor-ecommerce" id="menu-ecom">
             <div class="ecommerce-menu">
                 <img src="./imagenes/empanada-imagen2.jpg" alt="imagen">
@@ -65,37 +82,9 @@
                 <p>$25</p>
                 <button>agregar a carrito</button>
             </div>
-            <div class="ecommerce-menu">
-                <button id="magia">Tocar boton</button>
-            </div>
 
-            <div id="tratando">
-                <h1>Buenos dias</h1>
-            </div>
+ -->
 
-
-            <div class="productos">
-                <h2 class="center">nuestros productos</h2>
-                <ul class="collection" id="listadoFrutas">
-                    <li class="collection-item">Producto 1</li>
-                    <li class="collection-item">Producto 2</li>
-                    <li class="collection-item">Producto 3</li>
-                    <li class="collection-item">Producto 4</li>
-                    <li class="collection-item">Producto 5</li>
-                    <li class="collection-item">Producto 6</li>
-                    <li class="collection-item">Producto 7</li>
-                    <li class="collection-item">Producto 8</li>
-                </ul>
-                <div class="center">
-                    <h3 id="titulo">Carrito</h3>
-                    <div class="contenedor-carrito">
-                        <ul class="listadoCarrito">
-
-                        </ul>
-                        <img src="./imagenes/carrito.svg" style="cursor:pointer" class="img-carrito">
-                    </div>
-                </div>
-            </div>
     </main>
     <footer id="contacto">
         <div class="contenedor-footer">
@@ -120,11 +109,14 @@
             </div>
         </div>
     </footer>
-
-    <script src="js/funciones.js"></script>
-    <script src="js/constructor.js"></script>
-    <script src="js/variables.js"></script> 
-    <script src="js/documentby.js"></script>
-    <script src="./js/formulario.js"></script>
+    <script defer src="js/declaraciones.js" ></script>
+    <script defer src="js/constructor.js"></script>
+    <script defer src="js/variables.js" type="module"></script> 
+    <script defer src="js/funciones.js" type="module"></script>
+    <script defer src="js/documentby.js"></script>
+    <script defer src="js/carritoIndex.js" type="module"></script>
+    <script defer src="js/modal.js" ></script>
 </body>
 </html>
+
+

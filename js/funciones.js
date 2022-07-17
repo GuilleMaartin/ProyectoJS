@@ -1,3 +1,55 @@
+import  {variedades} from './variables.js'
+import { carritoIndex } from './carritoIndex.js'
+
+const mostrarProductos = (variedades) =>{
+    const contenedorProducto = document.getElementById('contenedorProducto')
+
+    variedades.forEach( variedad => {
+        //contenedorProducto.innerHTML=""
+        const div = document.createElement('div')
+        div.classList.add = ('card')
+        div.innerHTML += `<div class="card" style="width:18rem; style:"background-color:#333">
+                                    <img src= "${variedad.img}" class="card-img-top" alt="...">
+                                <div class="card-body"></div>
+                                    <h5 class="card-title">${variedad.nombre}</h5>
+                                    <p class="card-price">${variedad.precio}</p>
+                                    <button class="btn btn-primary" id=${variedad.id}>Comprar</button>
+                                </div>
+                            </div> `             
+        contenedorProducto.appendChild(div)
+
+        const boton = document.getElementById(`${variedad.id}`)
+        boton.addEventListener('click', ()=>{
+            carritoIndex(variedad.id)
+            alert(`Se agrego el producto ${variedad.nombre}`)
+        })
+        document.addEventListener('click', llamado)
+        function llamado(e){
+            let botonEliminar = e.target
+           if(botonEliminar.classList.contains('boton-eliminar')){
+                botonEliminar.parentElement.remove()
+           }
+
+        }
+    })
+
+}
+
+mostrarProductos(variedades)
+
+
+
+
+
+
+
+
+
+
+/**
+ * It asks the user for a product to delete, then searches the array for that product, and if it finds
+ * it, it deletes it.
+ */
 function eliminarProducto(){
     let aEliminar = prompt("¿Que producto desea eliminar?: ").toUpperCase()
     let resultado = variedades.indexOf(aEliminar)
@@ -8,7 +60,7 @@ function eliminarProducto(){
         alert ("Se ha eliminado el producto")
     }
     listarProductos()
-}
+}   
 
 function buscarProducto(){
     let busqueda = prompt("Que producto desea buscar: ")
@@ -88,12 +140,3 @@ function removerDelCarrito(vari){
 
 
 
-let tratando = document.getElementById("tratando")
-
-function agregarTratando(){
-    tratando.innerText=""   
-    tratando.innerText = `<h1>Bienvenidos</h1>
-                         <buttom>Haz click</buttom>`
-
-
-}
